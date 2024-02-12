@@ -1,0 +1,6 @@
+.env
+raw.csv
+__pycache__/
+.ipynb_checkpoints/
+notes
+dev.py
