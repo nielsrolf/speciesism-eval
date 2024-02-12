@@ -2,7 +2,7 @@
 
 ## Summary
 This repository contains code to run a speciesism eval on various models. The key ideas are
-- it should be easy for non-technical people to contribute to this eval - the questions and evaluation of answers is generated from a [simple google doc](TODO). More infos on how the templating for questions works in [templating](#templating)
+- it should be easy for non-technical people to contribute to this eval - the questions and evaluation of answers is generated from a [csv](tasks.csv). More infos on how the templating for questions works in [templating](#templating)
 - the general idea of this eval is: given a prompt, ask a model (or an agent) a question, and then let GPT-4 play the judge. Therefore, each question in the benchmark must come with `judge_instructions` that are very clear.
 - You can have a look at example [tasks](tasks.csv) and [results](results.csv)
 - We evaluate agents - that means an LLM (such as GPT-4, mistral-7b-instruct, llama2-70b), a temperature (currently: 0 or 1), and a system prompt. In the future, agents might consist out of more - e.g. they can be any fully specified system that get questions and respond with answers. This allows us to distinguish the effect that the LLM itself has from other important facotrs that contribute to the overall behavior of a system. 
